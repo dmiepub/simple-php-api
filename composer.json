@@ -1,0 +1,18 @@
+{
+  "name": "dmiepub/simple-php-api",
+  "description": "A simple PHP API with PostgreSQL",
+  "type": "project",
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-pdo": "*",
+    "ext-pgsql": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:8000 -t public"
+  }
+}
