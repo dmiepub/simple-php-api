@@ -15,5 +15,5 @@ require_once "../config/database.php";
 $query = $pdo->query("SELECT * FROM users");
 $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
-echo json_encode(["status" => "success", "data" => $users]);
+echo json_encode(["status" => "success", "users" => $users]);
 ?>
